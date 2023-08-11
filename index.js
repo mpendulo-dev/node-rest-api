@@ -16,7 +16,14 @@ app.use(cors());
 
 //middleware
 app.use(express.json());
+
+app.get("/", (req, res) => {
+  res.json({ message: "Hello, World!" });
+});
+
 app.use("/api/book", bookRoutes);
+
+module.exports = app;
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);

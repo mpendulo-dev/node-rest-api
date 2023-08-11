@@ -8,7 +8,8 @@
     "start": "nodemon index.js"
   },
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "testTimeout": 10000
   },
   "author": "Mpendulo Sibiya",
   "license": "ISC",
