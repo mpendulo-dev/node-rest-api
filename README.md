@@ -95,3 +95,9 @@ Content-Type: application/json
 - URL: `api/book/:id`
 - Method: `DELETE`
 - Response: `JSON object indicating success`
+
+## To run any test, use the following command:
+
+```sh
+  npm test
+```
