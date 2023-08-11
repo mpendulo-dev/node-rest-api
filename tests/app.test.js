@@ -31,4 +31,12 @@ describe("Book API", () => {
       ])
     );
   });
+
+  //Create a new book
+  it("should create a new book", async () => {
+    const newBook = { title: "Test Book", genre: "Fiction" };
+    const response = await request(app).post("/api/book").send(newBook);
+    expect(response.status).toEqual(201);
+    expect(response.body).toMatchObject(newBook);
+  });
 });
